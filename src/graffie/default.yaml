@@ -1,0 +1,72 @@
+apiVersion: 1
+datasources:
+  - name: ftps
+    type: influxdb
+    isDefault: true
+    access: proxy
+    database: ftps
+    user: oscar
+    password: codam
+    url: http://influxdb:8086/
+    jsonData:
+      httpMode: GET
+  - name: grafana
+    type: influxdb
+    isDefault: false
+    access: proxy
+    database: grafana
+    user: oscar
+    password: codam
+    url: http://influxdb:8086/
+    jsonData:
+      httpMode: GET
+  - name: influx
+    type: influxdb
+    isDefault: false
+    access: proxy
+    database: influx
+    user: oscar
+    password: codam
+    url: http://influxdb:8086/
+    jsonData:
+      httpMode: GET
+  - name: mysql
+    type: influxdb
+    isDefault: false
+    access: proxy
+    database: mysql
+    user: oscar
+    password: codam
+    url: http://influxdb:8086/
+    jsonData:
+      httpMode: GET
+  - name: wordpress
+    type: influxdb
+    isDefault: false
+    access: proxy
+    database: wordpress
+    user: oscar
+    password: codam
+    url: http://influxdb:8086/
+    jsonData:
+      httpMode: GET
+  - name: phpmyadmin
+    type: influxdb
+    isDefault: false
+    access: proxy
+    database: phpmyadmin
+    user: oscar
+    password: codam
+    url: http://influxdb:8086/
+    jsonData:
+      httpMode: GET
+  - name: nginx
+    type: influxdb
+    isDefault: false
+    access: proxy
+    database: nginx
+    user: oscar
+    password: codam
+    url: http://influxdb:8086/
+    jsonData:
+      httpMode: GET

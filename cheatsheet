@@ -1,0 +1,5 @@
+kubectl get pods
+kubectl get svc
+kubectl rollout restart deployment mysql
+kubectl rollout restart deployment influxdb
+ssh user@IP : pass
